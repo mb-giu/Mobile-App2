@@ -31,6 +31,7 @@ class HeroesAdapter(
             heroPower.text = hero.heroPower
             itemView.setOnClickListener {
                 val intent = Intent(itemView.context, DetailsActivity::class.java)
+                intent.putExtra("hero", hero)
                 itemView.context.startActivity(intent)
             }
         }

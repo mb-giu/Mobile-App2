@@ -40,12 +40,12 @@ class MasterActivity : AppCompatActivity() {
 
     private fun createHeroes() : List<Hero>{
         return listOf(
-            Hero(R.drawable.batman, heroName = "Batman", heroCompany = "DC Comics", heroPower = "Alta Inteligência"),
-            Hero(R.drawable.hulk, heroName = "Hulk", heroCompany = "Marvel Entertainment", heroPower = "Super Força"),
-            Hero(R.drawable.flash, heroName = "Flash", heroCompany = "DC Comics", heroPower = "Super Velocidade"),
-            Hero(R.drawable.drstrange, heroName = "Dr. Strange", heroCompany = "Marvel Entertainment", heroPower = "Magia"),
-            Hero(R.drawable.superman, heroName = "Superman", heroCompany = "DC Comics", heroPower = "Super Força, Voo"),
-            Hero(R.drawable.ironman, heroName = "Homem de Ferro", heroCompany = "Marvel Entertainment", heroPower = "Alta Inteligência, Armadura Poderosa")
+            Hero(R.drawable.batman, heroName = "Batman", heroCompany = "DC Comics", heroPower = "Alta Inteligência", powerOrigins = "Nenhum", enemies = "Joker", alterEgo = "Bruce Wane", creationDate = "30 de março de 1939"),
+            Hero(R.drawable.hulk, heroName = "Hulk", heroCompany = "Marvel Entertainment", heroPower = "Super Força", powerOrigins = "Radiação", enemies = "Red Hulk", alterEgo = "Bruce", creationDate = "Maio de 1962"),
+            Hero(R.drawable.flash, heroName = "Flash", heroCompany = "DC Comics", heroPower = "Super Velocidade", powerOrigins = "Experimentos", enemies = "Reverse Flash", alterEgo = "Barry Allen", creationDate = "Janeiro de 1940"),
+            Hero(R.drawable.drstrange, heroName = "Dr. Strange", heroCompany = "Marvel Entertainment", heroPower = "Magia", powerOrigins = "Magia", enemies = "", alterEgo = "N/A", creationDate = "Maio de 1962"),
+            Hero(R.drawable.superman, heroName = "Superman", heroCompany = "DC Comics", heroPower = "Super Força, Voo", powerOrigins = "Alien", enemies = "Lex Luthor", alterEgo = "Clark", creationDate = "Maio de 1930"),
+            Hero(R.drawable.ironman, heroName = "Homem de Ferro", heroCompany = "Marvel Entertainment", heroPower = "Alta Inteligência, Armadura Poderosa", powerOrigins = "Dinheiro", enemies = "Loki", alterEgo = "Tony Stark", creationDate = "Maio de 1962")
 
         )
     }
