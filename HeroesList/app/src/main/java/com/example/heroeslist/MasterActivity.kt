@@ -27,7 +27,6 @@ class MasterActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
         recyclerViewHeroes = findViewById(R.id.heroesRV)
         recyclerViewHeroes.adapter = HeroesAdapter(this.createHeroes(), this){
             Toast.makeText(this,it.heroName, Toast.LENGTH_LONG).show()
