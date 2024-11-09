@@ -2,7 +2,9 @@ package com.example.heroeslist
 
 import Hero
 import HeroesAdapter
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -39,12 +41,13 @@ class MasterActivity : AppCompatActivity() {
 
     private fun createHeroes() : List<Hero>{
         return listOf(
-            Hero(R.drawable.batman, heroName = "Batman", heroCompany = "DC Comics"),
-            Hero(R.drawable.hulk, heroName = "Hulk", heroCompany = "Marvel Enterteinment"),
-            Hero(R.drawable.flash, heroName = "Flash", heroCompany = "DC Comics"),
-            Hero(R.drawable.drstrange, heroName = "Dr. Strange", heroCompany = "Marvel Enterteinment"),
-            Hero(R.drawable.superman, heroName = "Superman", heroCompany = "DC Comics"),
-            Hero(R.drawable.ironman, heroName = "Iron Man", heroCompany = "Marvel Enterteinment"),
+            Hero(R.drawable.batman, heroName = "Batman", heroCompany = "DC Comics", heroPower = "Alta Inteligência"),
+            Hero(R.drawable.hulk, heroName = "Hulk", heroCompany = "Marvel Entertainment", heroPower = "Super Força"),
+            Hero(R.drawable.flash, heroName = "Flash", heroCompany = "DC Comics", heroPower = "Super Velocidade"),
+            Hero(R.drawable.drstrange, heroName = "Dr. Strange", heroCompany = "Marvel Entertainment", heroPower = "Magia"),
+            Hero(R.drawable.superman, heroName = "Superman", heroCompany = "DC Comics", heroPower = "Super Força, Voo"),
+            Hero(R.drawable.ironman, heroName = "Homem de Ferro", heroCompany = "Marvel Entertainment", heroPower = "Alta Inteligência, Armadura Poderosa")
+
         )
     }
 }
